@@ -1,7 +1,7 @@
 /* global Vue, VueRouter, axios */
 
-var RewardsPage = {
-  template: "#rewards-page",
+var HomePage = {
+  template: "#home-page",
   data: function() {
     return {
       message: "Welcome to Vue.js!"
@@ -13,7 +13,7 @@ var RewardsPage = {
 };
 
 var router = new VueRouter({
-  routes: [{ path: "/", component: RewardsPage }],
+  routes: [{ path: "/", component: HomePage }],
   scrollBehavior: function(to, from, savedPosition) {
     return { x: 0, y: 0 };
   }
