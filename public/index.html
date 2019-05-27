@@ -158,3 +158,37 @@
     </div>
   </div>
 </template>
+
+
+<template id="login-page">
+  <div class="vue-component">
+    <div class="container">
+      <div class="card">
+        <form>
+            <h1>Login</h1>
+            <ul>
+              <li class="text-danger" v-for="error in errors">{{ error }}</li>
+            </ul>
+            <div class="form-group">
+              <label>Email:</label>
+              <input type="email" class="form-control" v-model="email">
+            </div>
+            <div class="form-group">
+              <label>Password:</label>
+              <input type="password" class="form-control" v-model="password">
+            </div>
+            <button class="btn btn-primary" v-on:click="submit()">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</template>
+
+
+<template id="show-page">
+  <div class="vue-component">
+
+    <h1>{{ message }}</h1>
+
+  </div>
+</template>
