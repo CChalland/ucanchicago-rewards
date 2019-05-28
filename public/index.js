@@ -19,7 +19,7 @@ var RewardsPage = {
         method: this.method
       };
       axios
-        .post("/users", params)
+        .post("/victims", params)
         .then(function(response) {
           router.push("/")
         })
