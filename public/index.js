@@ -49,7 +49,7 @@ var LoginPage = {
         .then(function(response) {
           axios.defaults.headers.common["Authorization"] = "Bearer " + response.data.jwt;
           localStorage.setItem("jwt", response.data.jwt);
-          router.push("/");
+          router.push("/pwned");
         })
         .catch(function(error) {
           this.errors = ["Invalid email or password."];
@@ -69,6 +69,9 @@ var ShowPage = {
     };
   },
   created: function() {},
+  mounted: function() {
+    
+  },
   methods: {},
   computed: {}
 };
