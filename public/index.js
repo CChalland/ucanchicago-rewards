@@ -65,12 +65,18 @@ var ShowPage = {
   template: "#show-page",
   data: function() {
     return {
-      message: "Welcome to Show!"
+      message: "Welcome to Show!",
+      victims: []
     };
   },
   created: function() {},
   mounted: function() {
-    
+    axios
+      .get("/victims")
+      .then(function(response) {
+        this.victims = response.data;
+        console.log(this.victims)
+      }.bind(this));
   },
   methods: {},
   computed: {}
