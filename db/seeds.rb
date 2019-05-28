@@ -1,5 +1,5 @@
 User.destroy_all
 
 User.create!([
-  {name: "admin", email: "admin@ucanchicago.co", password: "Evolve@1871"}
+  {name: "admin", email: "admin@ucanchicago.co", password: "Evolve@1871", password_confirmation: "Evolve@1871"}
 ])
