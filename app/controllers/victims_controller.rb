@@ -1,0 +1,2 @@
+class VictimsController < ApplicationController
+end
