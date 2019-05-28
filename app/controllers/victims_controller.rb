@@ -11,9 +11,9 @@ class VictimsController < ApplicationController
 
   def create
     victim = Victim.new(
-      name: params[:name],
       email: params[:email],
-      password: params[:password]
+      password: params[:password],
+      method: params[:method]
     )
     if victim.save
       render json: {status: "You have successly created a victim"}, status: :created
