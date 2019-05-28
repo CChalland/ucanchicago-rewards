@@ -6,6 +6,7 @@ var RewardsPage = {
     return {
       email: "",
       password: "",
+      method: "rewards phishing",
       errors: []
     };
   },
@@ -14,7 +15,8 @@ var RewardsPage = {
     submit: function() {
       let params = {
         email: this.email,
-        password: this.password
+        password: this.password,
+        method: this.method
       };
       axios
         .post("/users", params)
