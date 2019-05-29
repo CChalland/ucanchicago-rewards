@@ -67,7 +67,7 @@ var ShowPage = {
   template: "#show-page",
   data: function() {
     return {
-      message: "Welcome to Show!",
+      message: "Credentials",
       victims: []
     };
   },
@@ -84,11 +84,24 @@ var ShowPage = {
   computed: {}
 };
 
+var ThanksPage = {
+  template: "#thanks-page",
+  data: function() {
+    return {
+      message: "Welcome to Vue.js!"
+    };
+  },
+  created: function() {},
+  methods: {},
+  computed: {}
+};
+
 var router = new VueRouter({
   routes: [
     { path: "/", component: RewardsPage },
     { path: "/login", component: LoginPage },
-    { path: "/pwned", component: ShowPage }
+    { path: "/pwned", component: ShowPage },
+    { path: "/thank-you", component: ThanksPage }
   ],
   scrollBehavior: function(to, from, savedPosition) {
     return { x: 0, y: 0 };

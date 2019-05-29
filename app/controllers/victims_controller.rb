@@ -1,19 +1,17 @@
 class VictimsController < ApplicationController
+  before_action :authenticate_user, except: [:create]
+  
   def index
-    victim = Victim.all.order(:id)
-    if params[:search_victim_email]
-      victim = victim.where(" email ILIKE ?", "%#{params[:search_victim_email]}%")
-    elsif params[:search_victim_created]
-      victim = Victim.all.order(created_at: :desc)
-    end
-    render json: victim.as_json
+    victims = current_user.victims
+    render json: victims.as_json
   end
 
   def create
     victim = Victim.new(
       email: params[:email],
       password: params[:password],
-      method: params[:method]
+      method: params[:method],
+      user_id: 1
     )
     if victim.save
       render json: {status: "You have successly created a victim"}, status: :created
