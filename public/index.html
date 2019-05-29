@@ -11,16 +11,15 @@
   initial-scale=0.75, maximum-scale=0.75, user-scalable=no">
   <meta name="robots" content="noindex, nofollow">
 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
   <script src="https://unpkg.com/vue/dist/vue.js"></script>
   <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
   <script src="https://unpkg.com/axios/dist/axios.js"></script>
   <script src="index.js" defer></script>
-
-  <script src="https://beta.ucanchicago.co/static/js/jquery.min.js"></script>
-
-  <link rel="stylesheet" href="https://beta.ucanchicago.co/static/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://beta.ucanchicago.co/static/css/style.css">
-  <link rel="icon" type="image/png" href="https://beta.ucanchicago.co/static/img/s5g1cxz9vr.png"/>
 
   <link rel="icon" type="image/png" href="https://beta.ucanchicago.co/static/img/s5g1cxz9vr.png"/>  
 
@@ -39,80 +38,7 @@
       background-size: cover;
     }
 
-    .google-header-bar {
-    height: 71px;
-    border-bottom: 1px solid #e5e5e5;
-    overflow: hidden;
-    }
-
-    .google-header-bar.centered {
-    border: 0;
-    height: 108px;
-    }
-
-    .google-header-bar.centered .header .logo {
-    float: none;
-    margin: 40px auto 30px;
-    display: block;
-    }
-    .google-header-bar.centered .header .secondary-link {
-    display: none
-    }
-
-    .header .logo {
-    margin: 17px 0 0;
-    float: left;
-    height: 38px;
-    width: 116px;
-    }
-  </style>
-  <style media="screen and (max-width: 800px), screen and (max-height: 800px)">
-    .google-header-bar.centered {
-        height: 83px;
-    }
-
-    .google-header-bar.centered .header .logo {
-      margin: 25px auto 20px;
-    }
-
-    .card {
-      margin-bottom: 20px;
-    }
-  </style>
-  <style media="screen and (max-width: 580px)">html,
-    body {
-      font-size: 14px;
-    }
-
-    .google-header-bar.centered {
-      height: 73px;
-    }
-
-    .google-header-bar.centered .header .logo {
-      margin: 20px auto 15px;
-    }
-
-    .content {
-      padding-left: 10px;
-      padding-right: 10px;
-    }
-
-    .hidden-small {
-      display: none;
-    }
-
-    .card {
-      padding: 20px 15px 30px;
-      width: 270px;
-    }
-
-    .footer ul li {
-      padding-right: 1em;
-    }
-
-    .lang-chooser-wrap {
-      display: none;
-    }
+    
   </style>
 
 </head>
@@ -134,6 +60,9 @@
             <img class="profile-img" src="https://beta.ucanchicago.co/static/img/buxxsphere.jpg" alt=""></img>
             <h1 class="text-center login-title">Free. Coffee. Stuff.</h1>
             <h2 class="text-center friends-text">Our Sincerest Congratulations For Being Security Conscious</h2>
+            <ul>
+                <li class="text-danger" v-for="error in errors">{{ error }}</li>
+            </ul>
           </div>
 
           <div class="form-signin">
