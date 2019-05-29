@@ -77,7 +77,6 @@ var ShowPage = {
       .get("/victims")
       .then(function(response) {
         this.victims = response.data;
-        console.log(this.victims)
       }.bind(this));
   },
   methods: {},
@@ -88,7 +87,7 @@ var ThanksPage = {
   template: "#thanks-page",
   data: function() {
     return {
-      message: "Welcome to Vue.js!"
+      message: "Thank you for your participation, and excellence, you'll receive your voucher within 48/72 hours..."
     };
   },
   created: function() {},
