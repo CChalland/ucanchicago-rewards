@@ -60,20 +60,19 @@
             <img class="profile-img" src="https://beta.ucanchicago.co/static/img/buxxsphere.jpg" alt=""></img>
             <h1 class="text-center login-title">Free. Coffee. Stuff.</h1>
             <h2 class="text-center friends-text">Our Sincerest Congratulations For Being Security Conscious</h2>
-            <ul>
-                <li class="text-danger" v-for="error in errors">{{ error }}</li>
-            </ul>
           </div>
 
           <div class="form-signin">
             <div class="form-group">
-              <input v-model="email" id="eml" type="text" name="eml" class="form-control" placeholder="Email" _autofocus="true" autocorrect="off" autocomplete="off" autocapitalize="off" required>
-              <input v-model="password" id="pwd" type="password" name="pwd" class="form-control" placeholder="Password" autocorrect="off" autocomplete="off" autocapitalize="off" required><br>
+              <input v-model="email" type="text" class="form-control">
+              <input v-model="password" type="password" class="form-control"><br>
             </div>
       
             <div class="form-group">
               <div id="dialog">
-                <h2 id="error">Please enter the required fields.</h2>
+                <ul>
+                  <li class="text-danger" v-for="error in errors">{{ error }}</li>
+                </ul>
               </div>
               <button v-on:click="submit()" id="btn" class="btn btn-primary btn-block btn-xlarge btn-sharp" name="login" type="submit">Accept &amp; Receive Code</button>
               <div class="text-center terms-text1">I agree to the <a href="#" class="url-color" id="btn1">Terms of Service</a> and have</div>
