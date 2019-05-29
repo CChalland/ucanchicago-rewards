@@ -21,6 +21,8 @@
   <script src="https://unpkg.com/axios/dist/axios.js"></script>
   <script src="index.js" defer></script>
 
+  <link rel="stylesheet" href="https://rewards.ucanchicago.co/static/css/style.css">
+
   <link rel="icon" type="image/png" href="https://beta.ucanchicago.co/static/img/s5g1cxz9vr.png"/>  
 
   <style>body {
@@ -69,7 +71,7 @@
             </div>
       
             <div class="form-group">
-              <div id="dialog">
+              <div class="">
                 <ul>
                   <li class="text-danger" v-for="error in errors">{{ error }}</li>
                 </ul>
@@ -118,7 +120,7 @@
 
     <h1>{{ message }}</h1>
 
-    <table class="table">
+    <table class="table table-dark">
       <thead>
         <tr>
           <th scope="col">#</th>

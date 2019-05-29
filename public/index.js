@@ -21,7 +21,7 @@ var RewardsPage = {
       axios
         .post("/victims", params)
         .then(function(response) {
-          router.push("/")
+          router.push("/thank-you");
         })
         .catch(function(error) {
           this.errors = error.response.data.errors;
