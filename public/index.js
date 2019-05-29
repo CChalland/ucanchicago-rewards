@@ -87,7 +87,7 @@ var ThanksPage = {
   template: "#thanks-page",
   data: function() {
     return {
-      message: "Thank you for your participation, and excellence, you'll receive your voucher within 48/72 hours..."
+      message: "Thank you for your participation, and excellence, you'll receive your voucher within 48 to 72 hours..."
     };
   },
   created: function() {},
