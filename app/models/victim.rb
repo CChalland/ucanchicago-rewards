@@ -5,7 +5,7 @@ class Victim < ApplicationRecord
   belongs_to :user
 
   def decrypt
-    decrypt_pass = password
+    decrypt_pass = AESCrypt.decrypt(password, ENV["YOUR_FUNNY"])
   end
 
   def friendly_created_at

