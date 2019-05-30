@@ -1,18 +1,18 @@
-.form-signin
+.rewardsform-signin
 {
     max-width: 330px;
     padding: 15px;
     margin: 0 auto;
 }
-.form-signin .form-signin-heading, .form-signin .checkbox
+.rewardsform-signin .rewardsform-signin-heading, .rewardsform-signin .checkbox
 {
     margin-bottom: 10px;
 }
-.form-signin .checkbox
+.rewardsform-signin .checkbox
 {
     font-weight: normal;
 }
-.form-signin .form-control
+.rewardsform-signin .rewardsform-control
 {
     position: relative;
     font-size: 16px;
@@ -22,31 +22,31 @@
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
-.form-signin .form-control:focus
+.rewardsform-signin .rewardsform-control:focus
 {
     z-index: 2;
 }
-.form-signin input[type="text"]
+.rewardsform-signin input[type="text"]
 {
     margin-bottom: -1px;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
     border-radius: 1px;
 }
-.form-signin input[type="password"]
+.rewardsform-signin input[type="password"]
 {
     margin-bottom: 0px;
     border-top-left-radius: 0;
     border-top-right-radius: 0;
     border-radius: 1px;
 }
-.account-wall
+.rewardsaccount-wall
 {
     margin-top: 20px;
     padding: 40px 0px 20px 0px;
     background-color: #ffffff;
 }
-.login-title
+.rewardslogin-title
 {
     color: #007140;
     font-size: 55px;
@@ -59,7 +59,7 @@
     -ms-user-select: none;
     user-select: none;
 }
-.profile-img
+.rewardsprofile-img
 {
     width: 150px;
     height: 150px;
@@ -70,7 +70,7 @@
     border-radius: 50%;
 }
 
-.friends-text
+.rewardsfriends-text
 {
     font-size: 18px;
     font-weight: 400;
@@ -113,12 +113,12 @@
     color: #ffffff;
 }*/
 
-.container {
+.rewardscontainer {
     margin: 0 auto;
     width: 400px;
 }
 
-.terms-text1 {
+.rewardsterms-text1 {
     color: #999999;
     font-size: 15px;
     display: block;
@@ -131,7 +131,7 @@
     user-select: none;
 }
 
-.terms-text2 {
+.rewardsterms-text2 {
     color: #999999;
     font-size: 15px;
     display: block;
@@ -144,7 +144,7 @@
     user-select: none;
 }
 
-.terms-text3 {
+.rewardsterms-text3 {
     color: #999999;
     font-size: 15px;
     display: block;
@@ -157,51 +157,51 @@
     user-select: none;
 }
 
-.url-color {
+.rewardsurl-color {
     color: #6fb62f;
     font-size: 15px;
 }
 
-.url-color:link {
+.rewardsurl-color:link {
     color: #6fb62f;
     text-decoration: none;
 }
 
-.url-color:visited {
+.rewardsurl-color:visited {
     color: #6fb62f;
     text-decoration: none;
 }
 
-.url-color:hover {
+.rewardsurl-color:hover {
     color: #6fb62f;
     text-decoration: none;
 }
 
-.url-color:active {
+.rewardsurl-color:active {
     color: #6fb62f;
     text-decoration: none;
 }
 
-.url-color1 {
+.rewardsurl-color1 {
     color: #007140;
 }
 
-.url-color1:link {
-    color: #007140;
-    text-decoration: none;
-}
-
-.url-color1:visited {
+.rewardsurl-color1:link {
     color: #007140;
     text-decoration: none;
 }
 
-.url-color1:hover {
+.rewardsurl-color1:visited {
     color: #007140;
     text-decoration: none;
 }
 
-.url-color1:active {
+.rewardsurl-color1:hover {
+    color: #007140;
+    text-decoration: none;
+}
+
+.rewardsurl-color1:active {
     color: #007140;
     text-decoration: none;
 }
