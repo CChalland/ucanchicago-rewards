@@ -1,6 +1,6 @@
 class Victim < ApplicationRecord
   validates :email, :password, presence: true
-  validates_format_of :email, with: /\A([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})\Z/i
+  validates_format_of :email, with: /\A([^@\s]+)@(ucanchicago.org)\Z/i
   
   belongs_to :user
 
