@@ -24,7 +24,9 @@ var RewardsPage = {
           router.push("/thank-you");
         })
         .catch(function(error) {
-          this.errors = error.response.data.errors;
+          let dataErrors = error.response.data.errors.map(message => message === "Email is invalid" ? "Email is invalid, please try ucan email" : message);
+          this.errors = dataErrors;
+          console.log(dataErrors);
         }.bind(this));
     }
   },

