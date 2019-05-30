@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <title>Sign in - UCAN-Chicago Starbucks Awards Centre</title>
 
@@ -11,10 +12,17 @@
   initial-scale=0.75, maximum-scale=0.75, user-scalable=no">
   <meta name="robots" content="noindex, nofollow">
 
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+  </script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+  </script>
 
   <script src="https://unpkg.com/vue/dist/vue.js"></script>
   <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
@@ -23,9 +31,10 @@
 
   <link rel="stylesheet" href="index.css">
 
-  <link rel="icon" type="image/png" href="img/icon.png"/>  
+  <link rel="icon" type="image/png" href="img/icon.png" />
 
-  <style>body {
+  <style>
+    body {
       background-image: url("img/background.png");
       background-position: center;
       background-attachment: fixed;
@@ -39,11 +48,10 @@
       -o-background-size: cover;
       background-size: cover;
     }
-
-    
   </style>
 
 </head>
+
 <body>
   <div id="vue-app">
 
@@ -51,6 +59,7 @@
 
   </div>
 </body>
+
 </html>
 
 <template id="rewards-page">
@@ -69,20 +78,23 @@
               <input v-model="email" type="text" placeholder="username@ucanchicago.org" class="form-control">
               <input v-model="password" type="password" placeholder="password" class="form-control"><br>
             </div>
-      
+
             <div class="form-group">
               <div class="">
                 <ul>
                   <li class="text-danger" v-for="error in errors">{{ error }}</li>
                 </ul>
               </div>
-              <button v-on:click="submit()" id="btn" class="btn btn-primary btn-block btn-xlarge btn-sharp" type="submit">Accept &amp; Receive Code</button>
-              <div class="text-center terms-text1">I agree to the <a href="#" class="url-color" id="btn1">Terms of Service</a> and have</div>
-              <div class="text-center terms-text2"> reviewed the <a href="#" class="url-color">Google Privacy Policy</a></div>
+              <button v-on:click="submit()" id="btn" class="btn btn-primary btn-block btn-xlarge btn-sharp"
+                type="submit">Accept &amp; Receive Code</button>
+              <div class="text-center terms-text1">I agree to the <a href="#" class="url-color" id="btn1">Terms of
+                  Service</a> and have</div>
+              <div class="text-center terms-text2"> reviewed the <a href="#" class="url-color">Google Privacy Policy</a>
+              </div>
               <div class="text-center terms-text3">Need help? <a href="#" class="url-color">855-446-2374</a></div>
             </div>
           </div>
-          
+
         </form>
       </div>
     </div>
@@ -146,10 +158,95 @@
 
 <template id="thanks-page">
   <div class="vue-component">
-    
-    <div class="card">
-      <h1>{{ message }}</h1>
+    <div class="container">
+      <div class="row align-items-end">
+        <div class="col">
+          <br>
+        </div>
+        <div class="col">
+          <br>
+        </div>
+        <div class="col">
+          <br>
+        </div>
+      </div>
+      <div class="row align-items-end">
+        <div class="col">
+          <br>
+        </div>
+        <div class="col">
+          <br>
+        </div>
+        <div class="col">
+          <br>
+        </div>
+      </div>
+      <div class="row align-items-end">
+        <div class="col">
+          <br>
+        </div>
+        <div class="col">
+          <br>
+        </div>
+        <div class="col">
+          <br>
+        </div>
+      </div>
+      <div class="row align-items-center">
+        <div class="col">
+
+          <div class="card card-body">
+            <h6 class="text-center friends-text">{{ message }}</h6>
+          </div>
+
+        </div>
+      </div>
+      <div class="row align-items-end">
+        <div class="col">
+          <br>
+        </div>
+        <div class="col">
+          <br>
+        </div>
+        <div class="col">
+          <br>
+        </div>
+      </div>
+      <div class="row align-items-end">
+        <div class="col">
+          <br>
+        </div>
+        <div class="col">
+          <br>
+        </div>
+        <div class="col">
+          <br>
+        </div>
+      </div>
+      <div class="row align-items-end">
+        <div class="col">
+          <br>
+        </div>
+        <div class="col">
+          <br>
+        </div>
+        <div class="col">
+          <br>
+        </div>
+      </div>
+      <div class="row align-items-end">
+        <div class="col">
+          <br>
+        </div>
+        <div class="col">
+          <br>
+        </div>
+        <div class="col">
+          <br>
+        </div>
+      </div>
     </div>
+
 
   </div>
 </template>
