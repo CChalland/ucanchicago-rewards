@@ -4,3 +4,11 @@ test
 spec
 features
 doc
+config/environment/development.rb
+config/environment/test.rb
+config/initializers/application_controller_renderer.rb
+config/initializers/backtrace_silencers.rb
+config/initializers/cors.rb
+config/initializers/inflections.rb
+config/initializers/mime_types.rb
+app/views
